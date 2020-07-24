@@ -5,7 +5,6 @@ function gradingStudents(grades) {
 
     grades.forEach(x => {
        if(Math.abs(x%5 -5) < 3) {
-           console.log(x,(Math.abs(x%5) -5) );
             const answer = Math.ceil(x/5)*5;
             res.push(answer < 40 ? x : answer)
         } else {
