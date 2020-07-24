@@ -20,7 +20,7 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
 function countApplesAndOranges2(s, t, a, b, apples, oranges) {
     return [
         apples.map(x => x + a).filter(x => x >=s && x <= t).length,
-        oranges.map(x => x + a).filter(x => x >=s && x <= t).length,
+        oranges.map(x => x + b).filter(x => x >=s && x <= t).length,
     ]
 }
 
